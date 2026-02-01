@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<audio id="music" src="music.mp3" loop></audio>
+<button class="music-btn" onclick="toggleMusic()">🎵</button>
+
+<!-- INTRO -->
+<section class="section active">
+  <h1>Hi my love ❤️</h1>
+  <p>This isn’t just a website.<br>It’s my heart — in code.</p>
+  <button onclick="next()">Begin 💕</button>
+</section>
+
+<!-- LETTER -->
+<section class="section">
+  <p class="letter-text" id="letterText"></p>
+  <button onclick="next()">Continue 💗</button>
+</section>
+
+<!-- QUIZ -->
+<section class="section" id="quiz">
+  <h1 id="question"></h1>
+  <div id="answers"></div>
+  <div id="feedback"></div>
+</section>
+
+<!-- VALENTINE -->
+<section class="section" id="final">
+  <h1>One last thing… 💞</h1>
+  <h2>Will you be my Valentine? 💍</h2>
+  <button class="yes" onclick="yesClicked()">YES 😭❤️</button>
+  <button class="no" onmouseover="moveNo()">No 🙃</button>
+</section>
+
+<!-- END -->
+<section class="section" id="end">
+  <img src="us.jpeg" class="final-photo">
+  <h1>You chose me ❤️</h1>
+  <p>
+    If I had a thousand lifetimes,<br>
+    I’d still find you in every one.<br><br>
+  </p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
